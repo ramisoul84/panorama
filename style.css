@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#panorama {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.options {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  bottom: 0;
+  right: 0;
+}
+.option {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+
+.logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.logo:hover {
+  background-color: aqua;
+}
+
+.label {
+  position: absolute;
+  width: 100px;
+  padding: 5px;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  justify-content: center;
+  align-content: center;
+}
+
+#home button {
+  padding: 5px;
+  border-radius: 5px;
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
