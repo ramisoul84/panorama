@@ -79,3 +79,7 @@
 .show {
   display: flex;
 }
+
+#c1_text {
+  cursor: pointer;
+}

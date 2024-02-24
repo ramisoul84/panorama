@@ -6,11 +6,10 @@ function load(img) {
     //title: `./assets/${img}.jpeg`,
     //author: "resVR",
     autoLoad: true,
+    autoRotate: -2,
     pitch: -12,
     yaw: 60,
     hfov: 145,
-    showControls: true,
-    showZoomCtrl: false,
     /*
     hotSpots: [
       {
@@ -64,10 +63,11 @@ document.getElementById("logo").addEventListener("click", function () {
   panorama.classList.replace("show", "hide");
   options.classList.add("hide");
 });
-document.getElementById("start").addEventListener("click", function () {
+document.getElementById("c1_text").addEventListener("click", function () {
   home.classList.replace("show", "hide");
   panorama.classList.replace("hide", "show");
   options.classList.remove("hide");
+  load("red");
 });
 
 function initial() {
